@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile - Welcome</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <span class="logo-icon"
+            ><h1>BC</h1>
+            <p>Bayu Company</p></span
+          >
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="profile.html" class="nav-link">Profile</a></li>
+            <li><a href="#contact" class="nav-link">Message Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Welcome Section -->
+      <section id="home" class="welcome-section">
+        <div class="welcome-container">
+          <div class="container">
+            <h1>Hi <span id="dynamicName">Bayu</span>, Welcome To Website</h1>
+            <p>Ini adalah website berbasis portofolio</p>
+            <div class="name-input-section">
+              <label for="nameInput">Masukkan nama Anda:</label>
+              <input
+                type="text"
+                id="nameInput"
+                placeholder="Nama Anda"
+                value="Bayu"
+              />
+              <button onclick="updateName()" class="update-name-btn">
+                Update Name
+              </button>
+            </div>
+          </div>
+          <div class="welcome-image">
+            <img class="placeholder-image" src="assets/home.png" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Headquarter Section -->
+      <section id="profile" class="headquarter-section">
+        <div class="container">
+          <h2>Our Headquarter</h2>
+          <div class="headquarter-grid">
+            <div class="headquarter-item">
+              <img class="headquarter-circle" src="assets/jakarta.webp" />
+              <h3>Jakarta</h3>
+            </div>
+            <div class="headquarter-item">
+              <img class="headquarter-circle" src="assets/semarang.jpg" />
+              <h3>Semarang</h3>
+            </div>
+            <div class="headquarter-item">
+              <img class="headquarter-circle" src="assets/surabaya.jpg" />
+              <h3>Surabaya</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio-section">
+        <div class="container">
+          <h2>Our Recent Projects</h2>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img class="placeholder-image" src="assets/ecommerce-app.jpg" />
+              </div>
+              <div class="portfolio-content">
+                <h3>E-Commerce Mobile App</h3>
+                <p>
+                  Aplikasi mobile untuk platform e-commerce dengan fitur
+                  pembayaran terintegrasi dan sistem manajemen inventory.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img class="placeholder-image" src="assets/Corporate-Website.jpg" />
+              </div>
+              <div class="portfolio-content">
+                <h3>Corporate Website</h3>
+                <p>
+                  Website perusahaan dengan sistem CMS custom dan optimasi SEO
+                  untuk meningkatkan visibility online.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-tag">WordPress</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img class="placeholder-image" src="assets/Cloud-Migration-Project.webp" />
+              </div>
+              <div class="portfolio-content">
+                <h3>Cloud Migration Project</h3>
+                <p>
+                  Migrasi infrastruktur perusahaan ke cloud dengan implementasi
+                  microservices architecture.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-tag">AWS</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">Kubernetes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img class="placeholder-image" src="assets/Data-Analytics-Dashboard.png" />
+              </div>
+              <div class="portfolio-content">
+                <h3>Data Analytics Dashboard</h3>
+                <p>
+                  Dashboard analytics real-time untuk monitoring KPI bisnis
+                  dengan visualisasi data interaktif.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img class="placeholder-image" src="assets/IOT.webp" />
+              </div>
+              <div class="portfolio-content">
+                <h3>IoT Monitoring System</h3>
+                <p>
+                  Sistem monitoring IoT untuk industri manufaktur dengan sensor
+                  terintegrasi dan alert system.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-tag">IoT</span>
+                  <span class="tech-tag">MQTT</span>
+                  <span class="tech-tag">InfluxDB</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img class="placeholder-image" src="assets/Cybersecurity.webp" />
+              </div>
+              <div class="portfolio-content">
+                <h3>Cybersecurity Implementation</h3>
+                <p>
+                  Implementasi sistem keamanan siber komprehensif dengan
+                  penetration testing dan monitoring.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-tag">Security</span>
+                  <span class="tech-tag">Firewall</span>
+                  <span class="tech-tag">SIEM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Testimonials -->
+      <section class="testimonials">
+        <div class="container">
+          <h2>What Our Clients Say</h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <p>
+                  "Tim yang sangat profesional dan hasil kerjanya melebihi
+                  ekspektasi kami. Proyek selesai tepat waktu dengan kualitas
+                  yang excellent."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-photo"></div>
+                <div class="author-info">
+                  <h4>John Doe</h4>
+                  <p>CEO, Tech Startup</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <p>
+                  "Solusi yang diberikan sangat inovatif dan membantu
+                  meningkatkan efisiensi operasional perusahaan kami secara
+                  signifikan."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-photo"></div>
+                <div class="author-info">
+                  <h4>Sarah Johnson</h4>
+                  <p>CTO, Manufacturing Corp</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <p>
+                  "Excellent communication dan support yang luar biasa. Sangat
+                  recommend untuk project development apapun."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-photo"></div>
+                <div class="author-info">
+                  <h4>Michael Chen</h4>
+                  <p>Founder, E-commerce Platform</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Message Us Section -->
+      <section id="contact" class="message-section">
+        <div class="container">
+          <h2>Message Us</h2>
+          <div class="message-content">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" required />
+                <span class="error-message" id="namaError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="tempatLahir">Tempat Lahir</label>
+                <select id="tempatLahir" name="tempatLahir" required>
+                  <option value="">BONDOWOSO</option>
+                  <option value="Jakarta">Jakarta</option>
+                  <option value="Bandung">Bandung</option>
+                  <option value="Surabaya">Surabaya</option>
+                  <option value="Bondowoso">Bondowoso</option>
+                  <option value="Yogyakarta">Yogyakarta</option>
+                  <option value="Semarang">Semarang</option>
+                </select>
+                <span class="error-message" id="tempatLahirError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="jenisKelamin">Jenis Kelamin</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      name="jenisKelamin"
+                      value="Laki-laki"
+                      required
+                    />
+                    Laki-laki
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      name="jenisKelamin"
+                      value="Perempuan"
+                      required
+                    />
+                    Perempuan
+                  </label>
+                </div>
+                <span class="error-message" id="jenisKelaminError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+                <span class="error-message" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="telepon">Nomor Telepon</label>
+                <input type="tel" id="telepon" name="telepon" required />
+                <span class="error-message" id="teleponError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                <span class="error-message" id="pesanError"></span>
+              </div>
+
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+
+            <div class="contact-info">
+              <div class="info-box">
+                <h3>Current time:</h3>
+                <p id="currentTime">Fri Jun 17 2022 11:27:26 GMT+00:00</p>
+                <br />
+                <h3>Biodata:</h3>
+                <p>
+                  <strong>Tempat Lahir:</strong>
+                  <span id="displayTempatLahir">[TBT]/1996</span>
+                </p>
+                <p>
+                  <strong>Jenis Kelamin:</strong>
+                  <span id="displayJenisKelamin">Laki - Laki</span>
+                </p>
+                <p>
+                  <strong>Pesan:</strong>
+                  <span id="displayPesan">I Luv Bango dari Medura</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>Created By Bayu!</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
